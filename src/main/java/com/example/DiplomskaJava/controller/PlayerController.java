@@ -1,4 +1,4 @@
-package com.example.DiplomskaJava;
+package com.example.DiplomskaJava.controller;
 
 import java.util.List;
 
@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.DiplomskaJava.dto.PlayerDTO;
+import com.example.DiplomskaJava.model.Player;
+import com.example.DiplomskaJava.service.PlayerService;
 
 @RestController
 @CrossOrigin
@@ -23,7 +27,7 @@ public class PlayerController {
 	}
 
 	@GetMapping
-	public List<Player> getAllPlayers() {
+	public List<PlayerDTO> getAllPlayers() {
 		return playerService.getAllPlayers();
 	}
 
@@ -31,6 +35,7 @@ public class PlayerController {
 	// consumes = MediaType.APPLICATION_XML_VALUE)
 	public Player savePlayer(@ModelAttribute Player player) {
 		return playerService.savePlayer(player);
+
 	}
 
 	@DeleteMapping("delete/{id}")

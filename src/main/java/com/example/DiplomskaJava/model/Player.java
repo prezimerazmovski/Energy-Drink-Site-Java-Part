@@ -1,4 +1,4 @@
-package com.example.DiplomskaJava;
+package com.example.DiplomskaJava.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
