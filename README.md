@@ -8,7 +8,7 @@
  ## External Tools Used
   - [Postman](https://www.postman.com/)- API Development Environment (Testing Documentation)
   ## Running the application locally
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the com.breakingbad.Application class from your IDE.
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the com.example.DiplomskaJava.Application class from your IDE.
 
 - Download the zip or clone the Git repository.
 - Unzip the zip file (if you downloaded one)
